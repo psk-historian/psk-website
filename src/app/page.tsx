@@ -4,20 +4,33 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[600px] bg-blue-900 text-white">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+      {/* Hero Section with House Background */}
+      <section className="relative h-[600px] text-white">
+        <div className="absolute inset-0">
+          <Image
+            src="/house-background.jpg"
+            alt="Phi Sigma Kappa House"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-psk-red bg-opacity-70"></div>
+        </div>
         <div className="relative z-10 h-full flex items-center justify-center">
-          <div className="text-center max-w-4xl mx-auto px-4">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Welcome to Phi Sigma Kappa
-            </h1>
-            <p className="text-xl md:text-2xl mb-8">
-              Brotherhood, Scholarship, and Character
-            </p>
+          <div className="text-center max-w-4xl mx-auto px-4 animate-fade-in">
+            <div className="relative inline-block">
+              <h1 className="text-6xl md:text-7xl font-bold mb-6">
+                Phi Sigma Kappa
+              </h1>
+            </div>
+            <div className="relative inline-block">
+              <p className="text-xl md:text-3xl mb-8">
+                Kappa Deuteron Chapter
+              </p>
+            </div>
             <Link
               href="/recruitment"
-              className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300"
+              className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-500 transition duration-300"
             >
               Join ΦΣK
             </Link>
@@ -25,76 +38,79 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Content */}
-      <section className="py-16 px-4">
+      {/* Chapter Awards */}
+      <section className="py-16 px-4 bg-psk-silver">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose ΦΣK?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-psk-red">Chapter Awards & Recognition</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Brotherhood */}
-            <div className="text-center p-6 rounded-lg shadow-lg">
-              <div className="text-4xl mb-4">👥</div>
-              <h3 className="text-xl font-semibold mb-4">Brotherhood</h3>
+            {/* Academic Excellence Award */}
+            <div className="text-center p-6 rounded-lg shadow-lg bg-white animate-fade-in">
+              <div className="text-4xl mb-4">🏆</div>
+              <h3 className="text-xl font-semibold mb-4 text-psk-red">Academic Excellence</h3>
               <p className="text-gray-600">
-                Join a lifelong brotherhood of men committed to excellence and mutual support.
+                Highest Chapter GPA Award 2023
+              </p>
+              <p className="text-sm text-gray-500 mt-2">
+                Recognized for maintaining a 3.4+ chapter GPA
               </p>
             </div>
 
-            {/* Leadership */}
-            <div className="text-center p-6 rounded-lg shadow-lg">
-              <div className="text-4xl mb-4">⭐</div>
-              <h3 className="text-xl font-semibold mb-4">Leadership</h3>
+            {/* Community Service Award */}
+            <div className="text-center p-6 rounded-lg shadow-lg bg-white animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <div className="text-4xl mb-4">🌟</div>
+              <h3 className="text-xl font-semibold mb-4 text-psk-red">Community Impact</h3>
               <p className="text-gray-600">
-                Develop leadership skills through hands-on experience and mentorship.
+                Outstanding Service Award 2023
+              </p>
+              <p className="text-sm text-gray-500 mt-2">
+                Over 1,000 community service hours completed
               </p>
             </div>
 
-            {/* Academic Excellence */}
-            <div className="text-center p-6 rounded-lg shadow-lg">
-              <div className="text-4xl mb-4">📚</div>
-              <h3 className="text-xl font-semibold mb-4">Academic Excellence</h3>
+            {/* Leadership Award */}
+            <div className="text-center p-6 rounded-lg shadow-lg bg-white animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <div className="text-4xl mb-4">👑</div>
+              <h3 className="text-xl font-semibold mb-4 text-psk-red">Leadership Excellence</h3>
               <p className="text-gray-600">
-                Maintain high academic standards with study resources and support.
+                Chapter of the Year 2023
+              </p>
+              <p className="text-sm text-gray-500 mt-2">
+                Recognized for outstanding chapter operations
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Upcoming Events */}
-      <section className="bg-gray-100 py-16 px-4">
+      {/* Recent Achievements */}
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Upcoming Events</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Event Cards */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2">Rush Week</h3>
-              <p className="text-gray-600 mb-4">Join us for our spring rush events and meet the brothers!</p>
-              <p className="text-blue-900">Date: January 20-27, 2024</p>
+          <h2 className="text-3xl font-bold text-center mb-12 text-psk-red">Recent Achievements</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-psk-silver p-6 rounded-lg shadow-md animate-fade-in">
+              <h3 className="text-xl font-semibold mb-2 text-psk-red">Philanthropy Success</h3>
+              <p className="text-gray-600 mb-4">Raised $25,000 for local charities in 2023</p>
+              <p className="text-psk-red">Most Successful Fundraiser Award</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2">Philanthropy Event</h3>
-              <p className="text-gray-600 mb-4">Annual charity fundraiser supporting local community.</p>
-              <p className="text-blue-900">Date: February 15, 2024</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2">Alumni Weekend</h3>
-              <p className="text-gray-600 mb-4">Connect with ΦΣK alumni and build lasting relationships.</p>
-              <p className="text-blue-900">Date: March 10, 2024</p>
+            <div className="bg-psk-silver p-6 rounded-lg shadow-md animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <h3 className="text-xl font-semibold mb-2 text-psk-red">Campus Leadership</h3>
+              <p className="text-gray-600 mb-4">Brothers hold 15+ leadership positions across campus</p>
+              <p className="text-psk-red">Student Organization Excellence Award</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 px-4 text-center">
-        <div className="max-w-3xl mx-auto">
+      <section className="py-16 px-4 text-center bg-psk-red text-black">
+        <div className="max-w-3xl mx-auto animate-fade-in">
           <h2 className="text-3xl font-bold mb-6">Ready to Begin Your Journey?</h2>
-          <p className="text-gray-600 mb-8">
-            Take the first step towards joining our brotherhood and creating lasting memories.
+          <p className="text-xl mb-8">
+            Take the first step towards joining our award-winning brotherhood
           </p>
           <Link
             href="/recruitment"
-            className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition duration-300"
+            className="bg-white text-psk-red px-8 py-3 rounded-lg font-semibold hover:bg-psk-silver transition duration-300"
           >
             Learn About Recruitment
           </Link>
