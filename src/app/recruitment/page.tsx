@@ -1,11 +1,20 @@
 export default function Recruitment() {
   return (
-    <div className="min-h-screen py-16">
+    <div className="min-h-screen bg-gradient-to-r from-red-500 to-gray-500 py-16">
       {/* Hero Section */}
-      <section className="bg-blue-900 text-white py-20 px-4 mb-16">
+      <section className="relative h-[800px] bg-gradient-to-r from-red-500 to-gray-500 text-white py-20 px-4 mb-16">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Join Our Brotherhood</h1>
-          <p className="text-xl mb-8">
+          <div className="absolute inset-0">
+            <video
+              autoPlay
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover">
+              <source src="/videos/zimzam.mp4" type="video/mp4" />
+            </video>
+            <div className="absolute inset-0 bg-opcaity-80"></div>
+          </div>
+          <h1 className="text-xl fadeInUp-animation md:text-8xl font-bold mb-6">Join Our Brotherhood</h1>
+          <p className="text-xl fadeInUp-animation mb-8">
             Take the first step towards becoming a member of Phi Sigma Kappa
           </p>
         </div>
