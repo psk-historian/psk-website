@@ -108,13 +108,13 @@ export default function Navbar() {
                   className="absolute top-full left-0 mt-1 w-48 bg-white shadow-lg rounded-md py-2 z-50"
                 >
                   <Link
-                    href="/newsletters"
+                    href="/alumni/newsletters"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-500 transition duration-300"
                   >
                     Newsletters
                   </Link>
                   <Link
-                    href="/events"
+                    href="/alumni/events"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-500 transition duration-300"
                   >
                     Events
