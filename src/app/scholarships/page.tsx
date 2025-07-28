@@ -18,7 +18,7 @@ export default function Scholarships() {
 
           <div className="max-w-4xl fadeInUp-animation mx-auto text-center">
             <h1 className="text-2xl py-10 md:text-6xl font-bold mb-6">Tom and Gloria Hughes Scholarship</h1>
-            <p className="text-2xl">Starting at homecoming in 2009, Tom Hughes (KD 326, '59) made a contribution to establish and grow a permanent fund for
+            <p className="text-2xl">Starting at homecoming in 2009, Tom Hughes (KD 326, 1959) made a contribution to establish and grow a permanent fund for
                 the purpose of consistently awarding scholarships. Previously scholarships were funded strictly via donations collected within the preceding year.
                 As of early 2020, the scholarship fund had grown in excess of $125,000 with annual contributions continuing to add to the base capital with a target
                 goal of $250,000. Scholarships totaling $5,500 are now consistently funded from the investment income of the portfolio. Scholarships awarded are as

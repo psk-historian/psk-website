@@ -28,7 +28,7 @@ export default function Events() {
           </p>
 
           <p className="text-xl py-6">
-          Join us also on Saturday, October 25th, as we'll kick things off with a homecoming tailgate before the big game.
+          Join us also on Saturday, October 25th, as we&apos;ll kick things off with a homecoming tailgate before the big game.
           Everyone is welcome as we come together to watch the Jackets take on the Syracuse Orange.
           See the flyer below for more details. See you there!
           </p>

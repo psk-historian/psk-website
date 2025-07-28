@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRef, useEffect, useState } from 'react';
 
 export default function Home() {
   return (
@@ -61,7 +60,7 @@ export default function Home() {
           </h2>
             <p className="text-center text-black text-3xl">
             We are the Kappa Deuteron chapter of Phi Sigma Kappa, a social fraternity with 62 chapters across
-            the United States. Since our chapter's founding in 1923, Phi Sigma Kappa is devoted to our Cardinal Principles of
+            the United States. Since our chapter&apos;s founding in 1923, Phi Sigma Kappa is devoted to our Cardinal Principles of
             brotherhood, schoolarship and character. These values guide everything we do, from fostering a tight-knit brotherhood that lasts
             well beyond graduation, to supporting academic excellence and leadership on campus, to shaping men of integrity and purpose.
             Our brothers are deeply involved in research, student government, professional organizations, and service initiatives, reflecting
