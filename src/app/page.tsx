@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { useRef, useEffect, useState } from 'react';
 
 export default function Home() {
-
   return (
     <div className="min-h-screen">
       {/* Hero Section with Video Background */}
@@ -61,14 +60,12 @@ export default function Home() {
             By These Things We Stand
           </h2>
             <p className="text-center text-black text-3xl">
-            With over 1400 members initated since our chapter's charter in 1923, Phi Sigma Kappa is devoted
-            to the promotion of its three Cardinal Principles: the Promotion of Brotherhood, the Stimulation
-            of Scholarship, and the Development of Character.
-            These values guide everything we do, from fostering a tight-knit brotherhood that lasts well beyond graduation,
-            to supporting academic excellence and leadership on campus,
-            to shaping men of integrity and purpose.
-            At Georgia Tech, our brothers are deeply involved in research, student government, professional organizations,
-            and service initiatives—reflecting a lifelong commitment to personal growth and community impact.
+            We are the Kappa Deuteron chapter of Phi Sigma Kappa, a social fraternity with 62 chapters across
+            the United States. Since our chapter's founding in 1923, Phi Sigma Kappa is devoted to our Cardinal Principles of
+            brotherhood, schoolarship and character. These values guide everything we do, from fostering a tight-knit brotherhood that lasts
+            well beyond graduation, to supporting academic excellence and leadership on campus, to shaping men of integrity and purpose.
+            Our brothers are deeply involved in research, student government, professional organizations, and service initiatives, reflecting
+            a lifelong commitment to personal growth and community impact.
             </p>
         </div>
       </section>
@@ -77,18 +74,20 @@ export default function Home() {
       <section className="py-16 px-4 bg-gradient-to-r from-red-500 to-gray-500">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-8xl font-bold text-center mb-12 text-white underline">Recent Achievements</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md animate-fade-in">
               <h3 className="text-3xl font-semibold mb-2 text-black">2024 Chapter of Honor</h3>
-              <p className="text-gray-600 text-xl mb-4">Radical dude</p>
-              {/** Insert image here */}
-              
+              <img className="h-auto max-w-full rounded-lg" src="/img/shonk2024.jpeg" alt="2023 General Convention Awards"></img>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <h3 className="text-3xl font-semibold mb-2 text-black">2023 General Convention Awards</h3>
-              <p className="text-gray-600 text-xl mb-4">Wow we're so cracked</p>
-              {/** Insert image here */}
-              <img className="h-auto max-w-full rounded-lg" src="convention2023.jpeg" alt="2023 General Convention Awards"></img>
+              <p className="text-gray-600 text-xl mb-4">Special Achievement Award in Community Service, Scholarship, Membership Experience, Recruitment, Campus Involvement</p>
+              <p className="text-gray-600 text-xl mb-4">Outstanding Chapter Advisor, Len Gailes</p>
+              <img className="h-auto max-w-full rounded-lg" src="/img/convention2023.jpeg" alt="2023 General Convention Awards"></img>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <h3 className="text-3xl font-semibold mb-2 text-black">2020 Herbert L. Brown Chapter of the Year</h3>
+              <img className="h-auto max-w-full rounded-lg" src="/img/convention2020.jpg" alt="2023 General Convention Awards"></img>
             </div>
           </div>
         </div>
@@ -104,7 +103,7 @@ export default function Home() {
           }}>Ready to Begin Your Journey?</h2>
           <p className="text-xl text-white mb-8">
             Take the first step towards joining our award-winning brotherhood!
-          </p>e
+          </p>
           <Link
             href="/recruitment"
             className="bg-red-500 text-white px-8 py-3 rounded-lg font-semibold transition duration-300"
