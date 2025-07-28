@@ -37,7 +37,7 @@ export default function Events() {
 
           <div className="flex justify-center py-6">
             <Link
-              href="/past-recipients"
+              href="https://donorbox.org/events/793011/steps/choose_tickets"
               className="bg-black text-white text-xl px-8 py-10 rounded-lg font-semibold hover:bg-gray-100 hover:text-red-500 transition duration-300 inline-block"
             >
             Buy tickets!
